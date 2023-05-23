@@ -1,0 +1,70 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+	//initialize the variables
+    int i , j, space = 8;
+	/*for loop pattern that will print out spaces and '#' pattern in the form of an X
+	then the image  is adjusted accordingly by spacing out each print out and space characters
+	there are six triangles to be printed out to form the x pattern */
+    for (i = 1; i <= space; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            cout << "  ";
+        }        
+        for(j = 1; j <= i; j++)
+        {
+            cout << " #";
+        }
+        for(j = i; j <= space; j++)
+        {
+            cout << "  ";
+        }
+        for(j = i; j <= space; j++)
+        {
+            cout << "  ";
+        }
+         for(j = i; j <= space - 1; j++)
+        {
+            cout << "   ";
+        } 
+        for (j = 1; j <= i; j++)
+        {
+            cout << " #";
+        }       
+    
+        
+        cout << endl;
+    }
+    for(i = 1; i <= space; i++)
+    {
+        for(j = i; j <= space; j++)
+        {
+            cout << "  ";
+        }
+        for (j = i; j <= space; j++)
+        {
+            cout << " #";
+        }
+        for (j = 1; j <= i - 1; j++)
+        {
+            cout << "   ";
+        }
+        for(j = 1; j <= i; j++)
+        {
+            cout << "     ";
+        }
+        for(j = i; j <= space; j++)
+        {
+            cout << " #";
+        }        
+      
+        cout << endl;
+    }
+
+    return 0;
+}
